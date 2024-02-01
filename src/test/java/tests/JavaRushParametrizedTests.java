@@ -69,7 +69,7 @@ public class JavaRushParametrizedTests extends TestBase {
         );
     }
 
-    @MethodSource
+    @MethodSource("sidebarGroupsShouldHaveCorrectNames")
     @ParameterizedTest(name = "Для языка интерфейса \"{0}\" должны быть корректные названия элементов боковой панели")
     @Tag("Critical")
     void sidebarGroupsShouldHaveCorrectNames(Languages language, List<String> expectedSidebarGroupHead, List<String> expectedSidebarGroupItems) {
